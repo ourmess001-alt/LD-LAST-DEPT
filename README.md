@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LD LAST DEPT. — 3D Digital Footwear Exhibition & Showroom
 
-## Getting Started
+An interactive, production-grade 3D sneaker exhibition showroom built with **Next.js**, **React Three Fiber (Three.js)**, **Tailwind CSS**, **Framer Motion**, and **Zustand**.
 
-First, run the development server:
+🔗 **Live GitHub Repository:** [https://github.com/tsourov211-eng/LD-LAST-DEPT](https://github.com/tsourov211-eng/LD-LAST-DEPT)
+
+---
+
+## 🌟 Key Features
+
+- **10 Real 3D GLB Footwear Silhouettes:**
+  - Iconic models (Gazelle, Air Max 90, Forum Buckle, Dunk Low, Air Jordan 1, Vans Old Skool, Chuck Taylor, Puma Suede, Bape Sta, Forge Runner).
+  - Normalized geometry sitting flush on display plinths without clipping.
+- **Architectural Dual-Tier Plinths:**
+  - Matte anodized obsidian black top pedestal.
+  - Suspended optical crystal glass slab with polished refraction edges.
+  - Precision chrome standoff pins and recessed glowing amber neon bars.
+- **Interactive 3D Turntable Inspection:**
+  - Smooth camera interpolation (`CameraRig`) into close-up 360° orbit inspection.
+  - Horizontal drag rotation and subtle idle floating/auto-spin.
+- **Global Search & Command Palette (`⌘K` / `/`):**
+  - Instant fuzzy search by silhouette name, index code, category, tier, or colorway.
+  - Quick category filter chips (`Runner`, `Basketball`, `Court`, `Skate`, `High-Top`).
+  - Spatial keyboard navigation (<kbd>↑</kbd> / <kbd>↓</kbd> / <kbd>Enter</kbd> to inspect in 3D).
+- **Interactive Purchasing & Customization HUD:**
+  - Real-time dynamic price calculation.
+  - Colorway swatches with active selection ring.
+  - Accessible EU size selector dropdown.
+  - Quantity stepper (`-` / `+`).
+  - Animated "Add to Bag" feedback.
+- **Slide-out Cart Drawer:**
+  - Dynamic quantity management, live subtotal, and exhibition checkout.
+- **Architectural Anatomy Bento Grid:**
+  - Apple/luxury-style modular bento grid showcasing material specs, damping latency, and biomechanics.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router + Turbopack)
+- **3D Graphics:** Three.js, React Three Fiber (`@react-three/fiber`), Drei (`@react-three/drei`)
+- **Post-processing:** Bloom (`@react-three/postprocessing`)
+- **Styling:** Tailwind CSS v4
+- **State Management:** Zustand
+- **Animations:** Framer Motion, Lucide React Icons
+
+---
+
+## 🚀 Getting Started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repository
+git clone https://github.com/tsourov211-eng/LD-LAST-DEPT.git
+
+# Enter directory
+cd LD-LAST-DEPT
+
+# Install dependencies (pnpm recommended)
+pnpm install
+
+# Start local dev server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-## Learn More
+## 📦 Production Build
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm build
+pnpm start
+```
