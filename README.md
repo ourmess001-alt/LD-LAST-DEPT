@@ -2,7 +2,7 @@
 
 An interactive, production-grade 3D sneaker exhibition showroom built with **Next.js**, **React Three Fiber (Three.js)**, **Tailwind CSS**, **Framer Motion**, and **Zustand**.
 
-🔗 **Live GitHub Repository:** [https://github.com/tsourov211-eng/LD-LAST-DEPT](https://github.com/tsourov211-eng/LD-LAST-DEPT)
+🔗 **Live GitHub Repository:** [https://github.com/ourmess001-alt/LD-LAST-DEPT](https://github.com/ourmess001-alt/LD-LAST-DEPT)
 
 ---
 
@@ -50,7 +50,7 @@ An interactive, production-grade 3D sneaker exhibition showroom built with **Nex
 
 ```bash
 # Clone the repository
-git clone https://github.com/tsourov211-eng/LD-LAST-DEPT.git
+git clone https://github.com/ourmess001-alt/LD-LAST-DEPT.git
 
 # Enter directory
 cd LD-LAST-DEPT
