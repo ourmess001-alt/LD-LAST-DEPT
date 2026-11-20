@@ -1,5 +1,5 @@
 {
-  "name": "temp-app",
+  "name": "3d-ecommerce-builder",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,21 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "@types/three": "^0.187.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^14.10.1",
+    "lucide-react": "^1.70.0",
+    "maath": "^0.10.8",
     "next": "16.4.5",
+    "postprocessing": "^6.39.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "tailwind-merge": "^3.7.0",
+    "three": "^0.187.0",
+    "zustand": "^5.1.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",

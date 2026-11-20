@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #18161c;
+  color: #f4f4f5;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom selection styling adhering to browser-ui-theming */
+::selection {
+  background-color: #ff4d29;
+  color: #ffffff;
+}
+
+/* Accessible high-contrast focus rings */
+:focus-visible {
+  outline: 2px solid #ff4d29;
+  outline-offset: 3px;
+}
+
+/* Scrollbar theming with distinct thumb contrast (>=3:1) and accessible width */
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.28) rgba(14, 13, 22, 0.6);
+  scrollbar-width: auto;
+}
+
+/* Native modal dialog styling and scroll containment */
+dialog:not([open]) {
+  display: none !important;
+}
+
+dialog[open] {
+  display: flex;
+}
+
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
